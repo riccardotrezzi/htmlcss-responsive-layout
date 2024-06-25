@@ -1,0 +1,105 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GENERAL*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-general{
+    width: 80%;
+    margin: 0 auto;
+}
+/*HEADER*/
+
+.header-top-container{
+    width: 100%;
+    background-color: #0084FD;
+    height: 70px;
+}
+.header-top-small-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    padding: 20px;
+    max-width: 130px;
+}
+
+/*MOBILE/TABLET HAMBURGER MENU*/
+
+.hamburger-menu-mobile{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+
+/*DESKTOP MENU*/
+
+.hamburger-menu-ul{
+    display: none;
+}
+
+.hamburger-menu-ul > ul{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.hamburger-menu-ul > ul > li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.hamburger-menu-ul > ul > li > a{
+    text-decoration: none;
+    color: white
+}
+
+#header-top-button{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#header-top-button > a{
+    color: black;
+}
+
+/*MAIN*/
+
+/*FOOTER*/
+
+/*RESPONSIVE*/
+
+/*TABLET*/
+
+@media screen and (min-width:576px) {
+
+    .header-top-container{
+        width: 100%;
+    }
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width:992px){
+
+    .hamburger-menu-ul{
+        display: block;
+    }
+
+    .hamburger-menu-mobile{
+        display: none;
+    }
+}
+
