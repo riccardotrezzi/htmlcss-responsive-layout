@@ -135,7 +135,7 @@ img{
 
 .card-2-3{
     width: 100%;
-    padding: 15px 0; 
+    text-align: left;
 }
 
 .card-2-3 > div > h4{
@@ -155,10 +155,11 @@ img{
     border-radius: 10px;
     padding: 10px;
     color:white;
+    margin-bottom: 20px;
 }
 
 .card-2-3 > div > img{
-    padding-bottom: 0px; 
+    margin-top: 10px; 
 }
 
 
@@ -194,15 +195,22 @@ img{
         display: none;
     }
 
-    .card-2-3{
+    .col.col-tablet-2-3 > .card-2-3{
         display: flex;
+        padding-bottom:0;
     }
 
-    .col.col-tablet-2-3.card-2-3 > *{
+    .card-2-3 > *{
         width: 50%;
     }
 
-    .col.col-tablet-2-3.card-2-3 > * img{
+    .card-2-3 > :last-child {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .card-2-3 > :last-child > img{
         max-height: 200px;
     }
 
