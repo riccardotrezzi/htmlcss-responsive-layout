@@ -85,6 +85,10 @@ img{
 
 /*HEADER-BOTTOM*/
 
+#header-bottom{
+    margin: 70px 0;
+}
+
 .main-row{
     display: flex;
     flex-wrap: wrap;
@@ -159,12 +163,155 @@ img{
 }
 
 .card-2-3 > div > img{
-    margin-top: 10px; 
+    margin-top: 20px; 
 }
 
 
 
 /*MAIN*/
+
+.first-main-section-container-bg{
+    background-color: #9792E4;
+    min-height: 300px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.first-main-section-container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-main-first-section-1{
+    color: white;
+    margin: 30px 0;
+}
+
+.card-main-first-section-1 > h3{
+    margin-bottom: 20px;
+}
+
+.card-main-first-section-2{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-main-first-section-2 > *{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-main-first-section-2 > p{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.card-main-first-section-2 > .fa-solid.fa-arrow, .button-first-main-section{
+    text-align: center;
+    background-color:#9792E4;
+    border-radius: 50%;
+    padding: 15px;
+    width: max-content;
+}
+
+/*TESTIMONIALS*/
+
+.text-section-testimonials{
+    text-align: center;
+    margin: 30px;
+}
+
+.text-section-testimonials > *{
+    margin-bottom: 20px;
+}
+
+.text-section-testimonials > h4{
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.text-section-testimonials > h2{
+    color:#9792E4;
+}
+
+.single-card-section-testimonials{
+    padding:15px;
+    background-color:#9792E4;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.img-testimonials{
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-testimonials > img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-img-testimonials{
+    color: white;
+}
+
+.text-img-testimonials > *{
+    margin: 15px 0;
+}
+
+/*BENEFITS*/
+
+#title-benefits{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.benefits-main-row{
+    width:100%;
+}
+
+.card-main-benefits{
+    background-color: white;
+    border-radius: 20px;
+    padding:15px;
+    margin-bottom: 20px;
+}
+
+.col-main-1-3.card-main-benefits > *{
+    margin-bottom: 15px;
+}
+
+.card-main-benefits > h2{
+    font-size: 50px;
+    color: #9792E4;
+}
+
+.card-main-benefits > h4{
+    font-size: 20px;
+    color: #9792E4;
+}
+
+.card-main-benefits > p{
+    font-size: 14px;
+    font-weight: 300;   
+}
+
+.button-benefits{
+    font-size: 14px;
+    width: 70px;
+    background-color: #9792E4;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+}
 
 /*FOOTER*/
 
@@ -181,12 +328,39 @@ img{
     .col.col-tablet-2-3{
         width: calc(((100% / 3) *2) - 20px);
     }
+
+    /*TESTIMONIALS*/
+
+    .single-card-section-testimonials{
+        display: flex;
+        align-items: center;
+    }
+
+    .single-card-section-testimonials > *{
+        margin-right: 20px;
+    }
+
+    /*BENEFITS*/
+
+    .col-main{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+
+    .col-main-1-3.card-main-benefits{
+        width: calc((100% / 2) - 20px);
+    }
+
 }
 
 /*DESKTOP*/
 
 @media screen and (min-width:992px){
 
+    /*HEADER*/
     .hamburger-menu-ul{
         display: block;
     }
@@ -211,9 +385,49 @@ img{
     }
 
     .card-2-3 > :last-child > img{
-        max-height: 200px;
+        max-width: 200px;
     }
 
+    /*MAIN*/
     
+    .first-main-section-container{
+        width: 60%;
+    }
+
+    .first-main-section-container > *{
+        margin-left: 10px;
+    }
+
+    .card-main-first-section-1{
+        width: 50%;
+    }
+
+    .card-main-first-section-2{
+        width: 45%;
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    #img-planning1{
+        margin: 30px 0;
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    #img-planning2{
+        max-height: 200px;
+        max-width: 200px;
+        padding: 10px;
+        position: relative;
+        left: 55px;
+    }
+
+    /*BENEFITS*/
+
+    .col-main-1-3.card-main-benefits{
+        width: calc((100% / 3) - 20px);
+    }
+    
+
 }
 
