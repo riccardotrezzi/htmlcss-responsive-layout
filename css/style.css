@@ -313,6 +313,62 @@ img{
     text-align: center;
 }
 
+/*ABOUT US*/
+
+#title-about-us{
+    font-size: 40px;
+    color:#9792E4;
+}
+
+.text-about-us{
+    font-size: 18px;
+    line-height: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.img-about-us{
+    position:relative;
+    display:inline-block;
+}
+
+.img-about-us > i{
+    position:absolute;
+    top:0;
+    right: 0;
+    font-size: 70px;
+    color:#9792E4;
+}
+
+.img-text-about-us{
+    margin-top: 20px;
+}
+
+.small-text-img-about{
+    margin: 20px 0;
+}
+
+.small-text-img-about > *{
+    margin-bottom: 20px;
+}
+
+.small-text-img-about > p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #9792E4;
+    letter-spacing: 2px;
+}
+
+.small-text-img-about > a{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #9792E4;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
 /*FOOTER*/
 
 /*RESPONSIVE*/
@@ -354,6 +410,20 @@ img{
         width: calc((100% / 2) - 20px);
     }
 
+    /*ABOUT US*/
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us-main{
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .img-text-about-us{
+        width: 30%;
+    }
 }
 
 /*DESKTOP*/
@@ -428,6 +498,20 @@ img{
         width: calc((100% / 3) - 20px);
     }
     
+    /*ABOUT US*/
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us-main{
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .img-text-about-us{
+        width: 30%;
+    }
 
 }
 
